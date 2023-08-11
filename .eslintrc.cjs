@@ -1,8 +1,9 @@
 module.exports = {
 	root: true,
 	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
+		// 'eslint:recommended',
+		// 'plugin:@typescript-eslint/recommended',
+		'xo/browser',
 		'plugin:svelte/recommended',
 		'prettier'
 	],
@@ -26,5 +27,8 @@ module.exports = {
 				parser: '@typescript-eslint/parser'
 			}
 		}
-	]
+	],
+	rules: {
+		'n/file-extension-in-import': 'off'
+	}
 };
